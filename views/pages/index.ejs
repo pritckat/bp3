@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>BloodPM | Blood Pressure Monitoring</title>
-</head>
-<body>
-    <!-- Navbar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">BloodPM</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="input.html">Input</a></li>
-                    <li><a href="data.html">Data</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/navbar.ejs') %>
     <!-- Showcase -->
     <section class="showcase">
         <div class="container grid">
@@ -58,34 +35,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="index-footer" class="bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>BloodPM</h1>
-                <p>Copyright &copy; BloodPM 2021</p>
-            </div>
-            <div class="contact">
-                <div>
-                    <h3>Contact Us</h3>
-                    <span>Katrina Pritchard: pritckat@gmail.com</span><br>
-                    <span>Shimanti Guha: shimanti@bloodpm.com</span>
-                </div>
-            </div>
-            <!-- <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="input.html">Input</a></li>
-                    <li><a href="data.html">Data</a></li>
-                </ul>
-            </nav> -->
-            <div class="social">
-                <a href="https://twitter.com/KatrinaPritcha3"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/katrina-pritchard/"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/pritckat"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
-<script src="main.js"></script>
-</html>
+<%- include('../partials/footer') %>
