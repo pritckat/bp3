@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BloodPM | Blood Pressure Monitoring</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">BloodPM</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="input.html">Input</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Input -->
+    <section class="input">
+        <div class="container flex no-scroll">
+            <div id="input-form-card" class="input-form card md">
+                <h2>Blood Pressure</h2>
+                <form action="" id="bp-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-control grid">
+                        <input name="sys" id="sys" class="lg top" type="text" name="sys" autocomplete="off" required>
+                        <label for="sys">SYS.</label><span>mmHg</span>
+                    </div>
+                    <div class="form-conrol grid">
+                        <input name="dia" id="dia" class="lg middle" type="text" name="dia" autocomplete="off" required>
+                        <label for="sys">DIA.</label><span>mmHg</span>
+                    </div>
+                    <div class="form-control grid">
+                        <input name="pul" id="pul" class="lg bottom" type="text" name="pul" autocomplete="off" required>
+                        <label for="sys">PUL.</label><span>/min</span>
+                    </div>
+                    <div  class="form-control flex">
+                        <input id="input-submit" type="submit" value="Submit" class="btn">
+                    </div>
+                </form>
+            </div>
+            <div class="notes">
+            <div id="notes-form-card" class="notes-form card md">
+                <h2>Blood Pressure</h2>
+                <div class="date-time">
+                    <span id="date">January 21, 2021</span>
+                </div>
+                <table class="my-1">
+                    <tr id="bp-table-headers">
+                        <th>Sys</th>
+                        <th>Dia</th>
+                        <th>Pul</th>
+                    </tr>
+                    <tr id="bp-table-values">
+                        <td id="sysNotes">122</td>
+                        <td id="diaNotes">90</td>
+                        <td id="pulNotes">76</td>
+                    </tr>
+                    <tr id="bp-table-units">
+                        <td>mmHg</td>
+                        <td>mmHg</td>
+                        <td>/min</td>
+                    </tr>
+
+                </table>
+
+                <!-- Uncomment the next line when this goes live -->
+                <!-- <form name="bp-data" method="POST" netlify-honeypot = "bot-field" data-netlify="true" id="notes-form"> -->
+                <form action="" id="notes-form">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="notes" placeholder="Notes" autocomplete="off">
+                    </div>
+                    <p class="hidden">
+                        <input id="sys-submit" type="text" name="sys">
+                        <input id="dia-submit" type="text" name="dia">
+                        <input id="pul-submit" type="text" name="pul">
+                    </p>
+                    <div  class="my-1 form-control flex">
+                        <input id="notes-submit" type="submit" value="Submit" class="btn">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>BloodPM</h1>
+                <p>Copyright &copy; BloodPM 2021</p>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="input.html">Input</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </nav> -->
+            <div class="social">
+              <a href="https://twitter.com/ShimantiG"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="https://www.linkedin.com/ShimantiG"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="https://www.github.com/Shimanti"><i class="fab fa-github fa-2x"></i></a>
+                <!-- <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
